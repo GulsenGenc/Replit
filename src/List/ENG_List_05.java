@@ -15,7 +15,7 @@ public class ENG_List_05 {
         List<Integer> istenen = new ArrayList<>();
         int sayac = 0;
 
-        for (int i = 5; i < 50; i++) {
+        for (int i = 5; i < Integer.MAX_VALUE; i++) {
             boolean asal = true;
             for (int j = 2; j < i; j++) {
                 if (i % j == 0) {

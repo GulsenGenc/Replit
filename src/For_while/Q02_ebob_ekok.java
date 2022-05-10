@@ -2,7 +2,7 @@ package For_while;
 
 import java.util.Scanner;
 
-public class Q02 {
+public class Q02_ebob_ekok {
     public static void main(String[] args) {
         /*
         Kullanıcıdan 2 tamsayı girmesini ve
@@ -21,15 +21,18 @@ Beklenen Cikti:
 
         int ebob=0;
         int ekok=0;
-
-        for (int i = 1; i <=sayı1; i++) {
+        for (int i = 1; i <=sayı1 ; i++) {
             if (sayı1%i==0 && sayı2%i==0){
-                   ebob=i;
+                ebob=i;
             }
         }
+
+
+
+
         System.out.println("iki sayının ebobu-->"+ebob);
 
-        ekok=(sayı1*sayı2)/ebob;
+       ekok=(sayı1*sayı2)/ebob;
         System.out.println("iki sayının ekoku-->"+ekok);
 
 
