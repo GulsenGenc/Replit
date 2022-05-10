@@ -1,5 +1,7 @@
 package Method_Array;
 
+import java.util.Arrays;
+
 public class ENG_Method_Array_03 {
     public static void main(String[] args) {
         /*
@@ -8,20 +10,24 @@ public class ENG_Method_Array_03 {
         -->Bir String'i parametre olarak kabul eden ve
          verilen string'de bulunan rakamların toplamını yazdıran bir metot yazın.
          */
-        String str="Java güzeldir ve ";
-        strHarfToplamı(str);
-    }
+    /*Bir String'i parametre olarak kabul eden ve verilen string'de bulunan rakamların toplamını yazdıran bir metot yazın.
+    girdi: ade1r4d3
+    çıktı: 8*/
 
-    private static void strHarfToplamı(String str) {
-        int sayac=0;
-        for (int i = 0; i <str.length() ; i++) {
-            sayac++;
+            String str="ade1r4d3";
+            String arr[]= str.replaceAll("\\D","").split("");
+            System.out.println(Arrays.toString(arr));
+            int toplam=0;
+            for (int i = 0; i <arr.length ; i++) {
+                toplam+=Integer.parseInt(arr[i]);
+            }
+            System.out.println(toplam);
+       /* for(int i=0; i<arr.length; i++){
+            if (Character.isDigit(arr[i].charAt(0))){
+                toplam+=Integer.valueOf(arr[i]);
+            }
         }
-        System.out.println("str da bulunan harf sayısı-->"+sayac);
-        int toplam=0;
-        for (int i = 0; i < str.length() ; i++) {
-            toplam+=str.charAt(i);
+        System.out.println("string ifadenin sayi degerleri toplami : "+toplam);*/
+
         }
-        System.out.println("strda bulunan harflerin ascii değer toplamı-->"+toplam);
-    }
 }
