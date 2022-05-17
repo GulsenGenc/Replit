@@ -37,6 +37,7 @@ public class ENG_Constructor02 {
         String soyisim="genç";
         isimDegistir(isim,soyisim);
         System.out.print(isim+" "+soyisim);
+
         System.out.println(" ");
         soyisim=soyisimDegıstır(soyisim);
         System.out.print(isim+" "+soyisim);

@@ -27,8 +27,23 @@ public class ENG_List_09 {
         int sayac = 1;
         int maxElemanınSayacı = 0;
         String enCokTekrarEdenKrakter = "";
+        for (int i = 0; i <arr.length ; i++) {
+            for (int j = i+1; j <arr.length ; j++) {
+                if (arr[i].equalsIgnoreCase(arr[j])){
+                    sayac++;
+                }
+            }
+            if (sayac>maxElemanınSayacı){
+                maxElemanınSayacı=sayac;
+                enCokTekrarEdenKrakter=arr[i];
+            } else if (sayac==maxElemanınSayacı){
+                maxElemanınSayacı=sayac;
+                enCokTekrarEdenKrakter+=", "+arr[i];
+            }
+            sayac=1;
+        }
 
 
-        System.out.println("metinde en çok tekrar eden karakter:"+enCokTekrarEdenKrakter);
+        System.out.println("metinde en çok tekrar eden karakter:"+maxElemanınSayacı+ " adet "+enCokTekrarEdenKrakter);
     }
 }

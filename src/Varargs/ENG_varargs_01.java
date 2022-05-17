@@ -12,15 +12,19 @@ public class ENG_varargs_01 {
         int b=2;
         int c=3;
         int d=4;
-        sumNumbers(1,2,3,4);
+        sumNumbers(1,2,3,4,8,9);
     }
 
-    private static void sumNumbers(int... number) {
+    private static void sumNumbers(int... i) {
         int sum=0;
-        for (int w:number
+
+        for (int w:i
              ) {
-            sum+=w;
+           sum+=w;
         }
-        System.out.println("sum of numbers="+sum);
+        System.out.println(sum);
     }
+
+
 }
+
